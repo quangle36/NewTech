@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let url = window.location.href;
+        let token = url.split('/');
+        console.log(`Token: ${token[token.length - 1]}`)
+        localStorage.setItem("token", token[token.length - 1]);
+        window.location.href = "/users"
+    </script>
+</head>
+<body>
+    <h1>Temp</h1>
+</body>
+</html>
